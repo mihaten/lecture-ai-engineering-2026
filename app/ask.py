@@ -30,7 +30,6 @@ def ask(question: str) -> str:
     if response.usage_metadata:
         print(f"入力トークン数: {response.usage_metadata.prompt_token_count}")
         print(f"出力トークン数: {response.usage_metadata.candidates_token_count}")
-
     return response.text
 
 
